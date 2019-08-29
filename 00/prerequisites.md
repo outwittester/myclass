@@ -9,7 +9,7 @@
 - [Java](<https://www.java.com/en/download/>)
 - [Python](<https://www.python.org/downloads/>)
 - Java Brains IDE [Intellij](<https://www.jetbrains.com/idea/download/#section=mac>) (recommend)
-- [Mysql](<https://dev.mysql.com/downloads/>) 
+- [Mysql](<https://dev.mysql.com/downloads/>)
 - Shell
 - Vim (default) or Nano or Emacs 
 - Postman
@@ -30,7 +30,7 @@
 
 6. Learn from each other
   - Thoroughly 
-  - Filling the gaps
+  - Filling the gaps 
   - Typing
 
 7. Algorithm [leetcode](<https://leetcode.com/problemset/all/>)
@@ -43,10 +43,62 @@
 
 8. Let's do it together
 
+# little about computer
+
+​                    CPU (control unit + logic unit)
+
+input  —>main memory(RAM Random Access Memory)   —> output                        
+
+​                     disk
+
+CPU +main memory = system unit  (display car)
+
+for CPU: **RISC** and **CISC**
+
+> Reduced Instruction Set Computer, **RISC**      SPARC  ARM
+>
+> Complex Instruction Set Computer, **CISC**      AMD Intel  (8086,80286, 80386)  x86_64
+>
+> 64 —> one time of max read is 2^32   Math.pow(2,64)    (primitive data types)
+>
+> newer computer means newer instruction set —> save power , complex commands , do things more
+
+cat /proc/cpuinfo     -- linux
+
+sysctl -a | grep machdep.cpu    --mac
+
+Volumn unit
+
+| Unit    | Kilo | Mega  | Giga  | Tera  | Peta  | Exa   | Zetta |
+| ------- | ---- | ----- | ----- | ----- | ----- | ----- | ----- |
+| binary  | 1024 | 1024K | 1024M | 1024G | 1024T | 1024P | 1024E |
+| decimal | 1000 | 1000K | 1000M | 1000G | 1000T | 1000P | 1000E |
+
+​    (oct and hex)
+
+Speed unit  —> cpu  (core  real multiple-threads,  i3/i5/i7)
+
+   MHz  or GHz  (on internet Mbps —> Mbits per second)   3.6G —> 3.6x10^9 , cpu operate times per second
+
+   20M/5M —> overkill most web usage
+
+   one indicator to judge how good a computer 
+
+Categories
+
+​	Supercomputer
+
+​    Mainframe Computer
+
+​    Minicomputer
+
+​    Workstation
+
+​    Microcomputer
+
 # Linux Commands
 
 1. *format* : command [-options] [parameter1] [parameter2] ...
-  
   - tab to autocomplete
 - where are these commands? (**which** or **where**)
   
@@ -276,8 +328,6 @@
    
    	
    
-   
-   
 48. **jar**
 
    jar -cvf projectname.war *    —> make all files into war   
@@ -289,6 +339,22 @@
    jar -cf myfile.jar *.java   —> make all .java into jar file
 
    java -jar myfile.jar   —> run executable jar  (need to understand manifest attribute in jar file)
+   
+49. **nslookup**  --> domain server name
+
+   nslookup [www.google.com](www.google.com)
+
+50. lsof -i -P -n
+
+   > check which port is in use and 
+
+   
+
+   
+
+   
+
+   
 
 # Shell
 
@@ -596,82 +662,71 @@
 
 	- insert mode
 	- command mode
-
 2. change arrow to hjkl
-
 3. vim filename
-
 4. i  -> enter insert mode
-
 5. esc -> exit insert mode, command mode
-
 6. :  -> command to execute
-
 7. L -> end of current page  H -> head M -> middle
-
 8. G -> move cursor to last line of page
-
 9. A -> enter insert mode at the end of current line, try a
-
 10. o -> enter insert mode at the beginning  of the next line,  try O 
-
 11. 0 -> move cursor to the beginning of current line, try $ and ^
-
 12. dd -> delete current line and save it in clip board, try D
-
 13. p -> paste things in clip board to current line
-
 14. u -> undo
-
 15. control + r -> redo
-
 16. w -> one word forward
-
 17. b -> one word backward
-
 18. dw -> delete one word and save it in clip board
-
 19. d3w -> delete three words and save it in clip board
-
 20. gg -> move cursor to the beginning of the whole page
-
 21. %s/Hello/Bye/g  -> change all test from 'Hello' to 'Bye' , try without g
-
 22. r -> replace one char, try R
-
 23. X -> delte one char before, try x
-
 24. . -> redo last command
-
 25. J -> join 2 lines
-
 26. d$ -> delete to the end of current line
-
 27. :w -> write 
-
 28. :q -> quit
-
 29. :q! -> quit without save
-
-30.  :x -> save and quit
-
-31.  :y -> copy
-
-32.  v -> visual motion to select
-
-33.  control e -> scroll down, try control b
-
+30. :x -> save and quit
+31. :y -> copy
+32. v -> visual motion to select
+33. control e -> scroll down, try control b
 34. /text -> search text, n to next
-
 35. set ic -> set ignore case, try noic
-
 36. :noh -> no highlight
-
 37. % -> find matching case {[()]}
-
 38. fx -> find fist char of 'x'
 
-	### There are many more but good to go
 
-	
+
+# Some Useful folders
+
+/bin
+
+> for all your executable binaries
+
+/etc   
+
+> **“etc”** is an English word which means etcetera (and so on)
+>
+> a central location for all your configuration files are located and this can be treated as nerve centre of your Linux/Unix machine.
+
+/dev 
+
+> for all hardware devices attached to machine. device files
+
+/var
+
+> files and directories that are constantly changing 
+
+/var/log
+
+/home
+
+/tmp
+
+> system temprorary directory. All users have read+write acces
 

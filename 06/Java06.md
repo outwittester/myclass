@@ -30,7 +30,7 @@
 	- no need to care about error cause it's designed shoud not try to catch
 		
 	- abnormal serious problems (JVM Error)
-		
+	
 - try catch exception
 	
 		- nothing wrong code run as normal 
@@ -86,9 +86,9 @@
 			 public void methodName() throws Exception {
 		        System.out.println("exception is typical implementation of inheritance");
 			        throw new Exception();
-	    }
+		}
 			```
-	
+		
 			- either use **try catch block** or (**throws with throw new** ExceptionType)
 		
 			- if use throws, the exception will be deal with the one who is calling this method
@@ -113,7 +113,7 @@
 				    }
 		}
 				```
-	
+		
 				- for unchecked exception(runtime exception), recommend not to deal with, give it JVM
 	
 	- **NullPointerException**
@@ -388,7 +388,6 @@
 
 	```java
 	public class Player {
-	
 	    public static void main(String[] args) {
 	        Date d = new Date() {
 	        };
@@ -396,11 +395,11 @@
 	    }
 	}
 	```
-
-	- rethink can an abstract  class be new? 
+	
+- rethink can an abstract  class be new? 
 	- can static be used in anonymous class?
-
-	```java
+	
+```java
 	public class Player {
 	    public static void main(String[] args) {
 	        Date d = new Date() {
@@ -928,7 +927,7 @@
 
 	- Keep  an object to a hardware is called persistence.  (data presistence)
 
-	- Implement **Serializable** or Externalizable
+	- Implement **Serializable** or **Externalizable**
 
 	- Serializable is a marker interface
 

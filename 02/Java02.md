@@ -410,7 +410,7 @@
         private Point pC;
     
         public void draw() {
-            System.out.println("triangle");
+            System.out.println("triangle");`
         }
     }
     

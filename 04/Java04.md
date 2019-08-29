@@ -140,10 +140,9 @@
   	- only one last element
   	- every element has one previous element but first one
   	- every element has one subsequent element but last one
-  	- same data type
   	- **fast on deletion and insertion but slow on get and set**
-
-  	```java
+  	
+```java
   	public class Node {
   		private Node previous;
   	
@@ -303,7 +302,7 @@
   	    }
   	}
   	```
-
+  
 3. Use LinkedList to implement Stack and Queue —> means one is using SE Library to implement your own data structure. (SE already has Stack and Queue, search and read doc and know how to use it)
 
 4.  **Set**
@@ -362,7 +361,7 @@
 
   	- find the contract of hashCode and understand 
   		- in one execution of java app hashcode return the same integer 
-  		- need not remain consistent from another execution of the same application
+  			- need not remain consistent from another execution of the same application
   		- obj1.equals(obj2) returns true then they have to have the same hashcode integer value 
   		- !obj1.equals(obj2) not required the two objects have the same hashcode integer value
   		- BUT Developer should be aware that producing the distinct integer results for unequal objects may improve the performance of hashtables

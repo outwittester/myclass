@@ -920,7 +920,7 @@
 
   **UDP**
 
-  - untable but fast (game , video)
+  - unstable but fast (game , video)
   - each unit of data is independent 
 
 5. **URL** —> one standard of TCP/IP, weak but simple, no need to understand protocol itself
@@ -960,7 +960,7 @@
 
 6. Tomcat
 
-  Follow me
+  Follow me —> check examples
 
 7. JDBC
 
@@ -998,7 +998,7 @@
   }
   ```
 
-  - statement (sql injection) VS prepare statement (multiple) vs callable statement (procedure)
+  - statement (sql injection) VS prepare statement (multiple) vs callable statement (procedure)trigger
 
   	Google above and be sure understand
 
