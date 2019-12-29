@@ -231,6 +231,22 @@
   	```
 
   	- Custom ClassLoader (search online and write your own class loader for practice)
+  	
+  - jvm set memory size:
+
+  	```java
+  	-XX:+HeapDumpOnOutOfMemoryError -Xms20m -Xmx20m
+  	```
+
+  	java_pid22115.hprof  file will be generated under project  --> Jprofiler
+
+  	Intellij --> help --> edit custom vm options
+
+  	Debug 
+
+  - jconsole
+
+  
 
 2. **Design Pattern**  —> lead to interface oriented program
 

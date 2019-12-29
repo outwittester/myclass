@@ -14,6 +14,7 @@
 - Vim (default) or Nano or Emacs 
 - Postman
 - Maven
+- Node.js
 - Terminal or [iTerm2](<https://www.iterm2.com/>) (optional)
 - Markdown (optional) —> Typora
 	- focus on text
