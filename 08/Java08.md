@@ -945,6 +945,14 @@
 
   protocol domain hostname port resource location
 
+  Node.js
+
+  http module
+
+  url module
+
+   
+
   - java.net.URL 
 
   ```java
