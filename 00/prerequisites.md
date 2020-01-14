@@ -338,6 +338,8 @@ Categories
    above 2 commands used for 
 
    jar -cf myfile.jar *.java   —> make all .java into jar file
+   
+   jar cmf META-INF/MANIFEST.MF myjar.jar App.class App.java
 
    java -jar myfile.jar   —> run executable jar  (need to understand manifest attribute in jar file)
    
