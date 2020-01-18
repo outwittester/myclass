@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <script src="../己vue/vue.js"></script>
+    <script src="axios.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <button @click="getTeacherList">get all teachers</button>
+        <table>
+            <tr v-for="item in teacherList">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+            </tr>
+        </table>
+    </div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            teacherList: []
+        },
+        methods: {
+            getTeacherList() {
+                axios.get('http://localhost:8110/admin/edu/teacher').then(response => {
+                    console.log(response)
+                    this.teacherList = response.data.data.items
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>
