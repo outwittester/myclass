@@ -1178,5 +1178,5 @@
 			- serialVersionUID —> a long number to check compatibility (compare the class if it's the same when deserialization) 
 			- ignore deleted fields, set default values for added fields.
 
-			
-
+		- Think --> a java bean contains a metod to return an object and it has setter and getter, thus customer can change the object, but in deed you don't want customer to change, what to do?
+	
