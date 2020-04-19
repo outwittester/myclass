@@ -247,11 +247,11 @@
 
 6. **Operator**
 
-  - +
-  - -
-  - *
-  - /
-  - %
+  -   +
+  -   -
+  -   *
+  -   /
+  -   %
 
     - Run ReverseInteger
 
