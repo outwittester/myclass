@@ -680,10 +680,11 @@
                         sorted = false;
                     }
                     System.out.println(Arrays.toString(arr));
-                }
-                if(sorted){ //每一趟有序
+                    if(sorted){ //每一趟有序
                     break;
+                  }
                 }
+               
             }
         }
     
