@@ -103,6 +103,13 @@
   	- java.lang.ClassLoader  (inherit from this to make your own classLoader, since java classloader only load class once and inheritance feature, malcode won't be able to load into JVM to make harm and no duplicate named class allowed in one name space, at runtime JVM is checking .class both classLoader and package name and class name, Even you write your own classLoader and hack into jvm but is different from java.lang.* classLoader which makes java secure)
 
   	- [ClassLoader](https://www.baeldung.com/java-classloaders)
+    
+    类加载器加载类寻找classpath
+    package org.springframework.core.io.support;
+    
+    target/classes   <--> FACTORIES_RESOURCE_LOCATION = "META-INF/spring.factories";  
+    or 
+    jar  --> autoconfigure
 
   - Guess the result below
 
