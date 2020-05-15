@@ -649,7 +649,7 @@
 
   - if very clear, you may override equals to improve the performance
 
-  	- Comparable
+  	- Comparable      --> paractice LeetCode 451
 
   		```java
   		public class Player {
