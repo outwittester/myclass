@@ -754,6 +754,9 @@
             int lo = 0;
             int hi = a.length - 1;
             for (int each : a) {
+                if(lo > hi){
+                  break;
+                }  
                 int mid = lo + (hi - lo) / 2;
                 if (key < a[mid]) {
                     hi = mid - 1;
