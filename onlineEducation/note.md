@@ -386,7 +386,7 @@ public class CodeGenerator {
         dsc.setUrl("jdbc:mysql://localhost:3306/guli_" + moduleName + "_190105");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("qpzm1125");
+        dsc.setPassword("");
         dsc.setDbType(DbType.MYSQL);
         mpg.setDataSource(dsc);
         // 4、包配置
